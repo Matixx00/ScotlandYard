@@ -10,7 +10,7 @@ package uk.ac.bris.cs.scotlandyard.model;
  * @author lucas
  */
 public class DestinationVis implements MoveVisitor{
-    int destination;
+    public int destination;
     
     @Override
     public void visit(TicketMove move){

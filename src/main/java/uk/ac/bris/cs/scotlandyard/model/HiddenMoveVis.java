@@ -12,15 +12,15 @@ import java.util.List;
  * @author lucas
  */
 public class HiddenMoveVis implements MoveVisitor{
-    int destination;
-    int currentRound;
-    List<Boolean> rounds;
+    public int destination;
+    private final int currentRound;
+    private final List<Boolean> rounds;
     
-    boolean isDouble;
-    int firstDes;
-    int secondDes;
-    TicketMove firstMove;
-    TicketMove secondMove;
+    public boolean isDouble;
+    public int firstDes;
+    public int secondDes;
+    public TicketMove firstMove;
+    public TicketMove secondMove;
     
     HiddenMoveVis(int lastRevealed, List<Boolean> rounds, int currentRound) {
         destination = lastRevealed;

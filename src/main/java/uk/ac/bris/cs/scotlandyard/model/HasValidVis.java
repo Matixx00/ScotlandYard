@@ -10,8 +10,8 @@ package uk.ac.bris.cs.scotlandyard.model;
  * @author lucas
  */
 public class HasValidVis implements MoveVisitor{
-    ScotlandYardPlayer player;
-    boolean hasTicket;
+    private final ScotlandYardPlayer player;
+    public boolean hasTicket;
     
     HasValidVis(ScotlandYardPlayer player){
         this.player = player;

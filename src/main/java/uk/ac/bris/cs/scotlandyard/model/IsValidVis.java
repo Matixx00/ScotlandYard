@@ -12,8 +12,8 @@ import java.util.Set;
  * @author lucas
  */
 public class IsValidVis implements MoveVisitor{
-    Set<Move> validMoves;
-    boolean isValid;
+    private final Set<Move> validMoves;
+    public boolean isValid;
     
     IsValidVis(Set<Move> validMoves){
         this.validMoves = validMoves;
